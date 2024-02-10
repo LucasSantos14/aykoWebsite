@@ -83,7 +83,7 @@ main {
 
 .seconDivMain {
     display: flex;
-    width: 50%;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -205,6 +205,45 @@ i {
 @keyframes fall {
     0% { top: -30px; }
     100% { top: 100%; }
+}
+
+@media screen and (min-width: 680px) {
+     .firstDivMain {
+        text-align: center;
+        width: 100%;
+        padding: 0;
+     }
+
+     .firstDivMain > h1 {
+        margin-top: 25vh;
+        transform: translateY(-50%);
+     }
+
+     .firstDivMain > p {
+        padding-top: 0;
+     }
+
+     main {
+        flex-direction: column;
+        justify-content: flex-start;
+     }
+
+     .seconDivMain {
+        order: 2;
+        height: 30vh;
+     }
+
+     #mainButton1 {
+        width: 190px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    #mainButton1 {
+        width: 190px;
+        height: 50px;
+    }
 }
 
 </style>
