@@ -91,14 +91,14 @@ main {
 }
 
 #mainButton1 {
-    padding: 0;
+    padding: 1%;
     display: flex;
     background-color: rgb(192, 68, 230);
     margin-top: 8%;
     margin-bottom: 5px;
     font-size: 16pt;
     border-radius: 15px;
-    height: 45px;
+    height: 60px;
     width: 165px;
     justify-content: center;
     align-items: center;
@@ -207,7 +207,7 @@ i {
     100% { top: 100%; }
 }
 
-@media screen and (min-width: 680px) {
+@media screen and (max-width: 680px) {
      .firstDivMain {
         text-align: center;
         width: 100%;
@@ -235,15 +235,34 @@ i {
 
      #mainButton1 {
         width: 190px;
-        height: 60px;
+        height: 40px;
     }
 }
 
 @media screen and (max-width: 565px) {
     #mainButton1 {
         width: 190px;
-        height: 50px;
+        padding: 8px;
     }
+}
+
+@media screen and (max-width: 400px) {
+    #mainButton4 {
+        margin-bottom: 30px;
+    }
+    
+    .firstDivMain {
+        height: 65vh;
+    }
+
+    .firstDivMain > p {
+        transform: translateY(-100px);
+    }
+
+    .seconDivMain {
+        height: 600px;
+    }
+
 }
 
 </style>
