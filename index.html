@@ -72,12 +72,13 @@ main {
 .firstDivMain > h1 {
     font-family: 'Signika', sans-serif;
     font-size: 30pt;
+    margin-top: 40px;
 }
 
 .firstDivMain > p {
     font-family: 'Signika', sans-serif;
     font-size: 15pt;
-    padding-top: 4%;
+    padding-top: 6%;
     font-weight: 300;
 }
 
@@ -91,14 +92,14 @@ main {
 }
 
 #mainButton1 {
-    padding: 1%;
+    padding: 5px;
     display: flex;
     background-color: rgb(192, 68, 230);
     margin-top: 8%;
     margin-bottom: 5px;
     font-size: 16pt;
     border-radius: 15px;
-    height: 60px;
+    height: 45px;
     width: 165px;
     justify-content: center;
     align-items: center;
@@ -215,8 +216,7 @@ i {
      }
 
      .firstDivMain > h1 {
-        margin-top: 25vh;
-        transform: translateY(-50%);
+        margin-top: 15vh;
      }
 
      .firstDivMain > p {
@@ -231,6 +231,7 @@ i {
      .seconDivMain {
         order: 2;
         height: 30vh;
+        margin-top: 20px;
      }
 
      #mainButton1 {
@@ -246,7 +247,7 @@ i {
     }
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (max-width: 420px) {
     body {
         overflow: hidden;
     }
@@ -256,19 +257,21 @@ i {
     }
     
     .firstDivMain {
-        height: 45vh;
+        height: 24em;
     }
 
     .firstDivMain > p {
-        transform: translateY(-100px);
+        margin-top: 20px;
+        transform: translateY(0);
     }
 
     .firstDivMain > h1 {
-        margin-top: 43%;
+        margin-top: 80px;
     }
 
     .seconDivMain {
         height: 300px;
+        margin-top: 20px;
     }
 
     .dHeader {
