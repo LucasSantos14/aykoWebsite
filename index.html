@@ -318,19 +318,19 @@ i {
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-        var numberOfKitties = 40;
-        var imageSrc = './gato.png';
+        var numberOfKitties = 40
+        var imageSrc = './gato.png'
 
         for (var i = 0; i < numberOfKitties; i++) {
-            var kitty = document.createElement("img");
+            var kitty = document.createElement("img")
             kitty.src = imageSrc;
-            kitty.style.left = Math.random() * 100 + "vw";
-            kitty.style.animationDuration = Math.random() * 5 + 5 + "s";
-            kitty.style.animationDelay = Math.random() * 4 + "s"; 
-            kitty.style.opacity = Math.random();
-            kitty.style.width = Math.random() * 20 + 10 + "px";
-            kitty.classList.add("kitty");
-            document.body.appendChild(kitty);
+            kitty.style.left = Math.random() * 100 + "vw"
+            kitty.style.animationDuration = Math.random() * 5 + 5 + "s"
+            kitty.style.animationDelay = Math.random() * 4 + "s"
+            kitty.style.opacity = Math.random()
+            kitty.style.width = Math.random() * 20 + 10 + "px"
+            kitty.classList.add("kitty")
+            document.body.appendChild(kitty)
         }
     })
     document.getElementById('botaoRecarregar').addEventListener('click', function() {
