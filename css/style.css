@@ -261,7 +261,7 @@ i {
     }
 }
 
-/* .signImg {
+.signImg {
     width: 50px;
     height: 40px;
     animation: bounceSign 0.6s ease-out infinite alternate;
@@ -282,4 +282,4 @@ i {
     background-color: #fff;
     height: 5px;
     width: 100px;
-} */
+}
