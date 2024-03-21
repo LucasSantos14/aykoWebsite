@@ -33,7 +33,7 @@
     <main>
         <section class="containSection">
             <div class="firstDivMain">
-                <h1>Olá, venha conhecer meu lindo <br> mundo imaginário.</h1> <br>
+                <h1>Olá, venha conhecer meu<br> lindo mundo imaginário.</h1> <br>
                 <p>Aqui você pode se sentir em casa. <br><br>Mas limpe os pés antes de entrar!</p>
             </div>
 
@@ -54,7 +54,7 @@
         <img class="signImg" src="imgs/sign.png" alt="">
         <div class="line1"></div>
     </main>
-
+    <div class="mouseTrail"></div>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             var numberOfKitties = 40
@@ -72,6 +72,13 @@
                 document.body.appendChild(kitty)
             }
         })
+
+        document.addEventListener('mousemove', function(e) {
+    const cursor = document.getElementById('cursor');
+    
+    cursor.style.left = e.pageX + 'px';
+    cursor.style.top = e.pageY + 'px';
+})
     </script>
 </body>
 

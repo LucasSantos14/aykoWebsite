@@ -5,6 +5,7 @@
 
 body {
     background-color: #000;
+    overflow: hidden;
 }
 
 header {
@@ -78,7 +79,8 @@ main {
     justify-content: center;
 }
 
-.firstDivMain, .seconDivMain {
+.firstDivMain,
+.seconDivMain {
     width: 50%;
 }
 
@@ -268,6 +270,7 @@ i {
     margin-left: auto;
     margin-right: auto;
     animation: bounceSign 0.6s ease-out infinite alternate;
+    visibility: hidden;
 }
 
 @keyframes bounceSign {
@@ -278,4 +281,14 @@ i {
     100% {
         transform: translateY(-10px);
     }
+}
+
+.mouseTrail {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    pointer-events: none;
+    transition: transform 0.1s ease;
 }
