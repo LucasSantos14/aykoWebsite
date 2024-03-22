@@ -5,7 +5,6 @@
 
 body {
     background-color: #000;
-    overflow: hidden;
 }
 
 header {
@@ -51,7 +50,7 @@ main {
 .containSection {
     width: 90vw;
     display: flex;
-    margin-top: 14%;
+    margin-top: 16%;
 }
 
 .firstDivMain {
