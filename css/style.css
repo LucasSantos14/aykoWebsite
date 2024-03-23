@@ -5,6 +5,7 @@
 
 body {
     background-color: #000;
+    overflow: hidden;
 }
 
 header {
@@ -282,7 +283,7 @@ i {
     }
 }
 
-.mouseTrail {
+/* .mouseTrail {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -290,4 +291,4 @@ i {
     position: absolute;
     pointer-events: none;
     transition: transform 0.1s ease;
-}
+} */
