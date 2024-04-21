@@ -1,118 +1,208 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="ayko2_profile.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/commandsStyle.css">
+    <link rel="shortcut icon" href="../imgs/ayko_profile3.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;500&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <title>Comandos - Ayko</title>
 </head>
-<style>
-* {
-    margin: 0;
-    padding: 0;
-}
 
-body {
-    background-color: #000;
-}
-
-header {
-    background-color: #202020;
-    color: #fff;
-    padding: 10px 0;
-    font-family: 'Poppins', sans-serif;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 1px;
-}
-
-.dHeader {
-    display: inline-block;
-    margin-left: 30px;
-    transition: all ease-in-out 0.2s;
-}
-
-.dHeader:hover {
-    color: #eb54d2;
-}
-
-.cContainter {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.cContainter > a  {
-    text-decoration: none;
-    color: #fff;
-}
-
-.dev {
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-    font-size: 30pt;
-}
-
-i {
-    margin-right: 7px;
-}
-
-.kitty {
-    position: fixed;
-    top: -60px;
-    z-index: 9999;
-    animation-name: fall;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-
-@keyframes fall {
-    0% { top: -30px; }
-    100% { top: 100%; }
-}
-
-</style>
 <body>
     <header>
         <div class="cContainter">
-            <a href="../index.html">
-                <div class="dHeader">Ayko</div>
-            </a>
-            <!-- <a href="https://discord.gg/Xb9bwhjaZ3" target="_blank"> -->
-                <div class="dHeader">Suporte</div>
-            </a>
-            <a href="commands.html">
-                <div class="dHeader">Comandos</div>
-            </a>
-            <a href="extras.html">
-                <div class="dHeader">Extras</div>
-            </a>
+            <a href="../index.html" class="dHeader">Ayko</a>
+            <a href="https://discord.gg/WszEMXczst" target="_blank" class="dHeader">Suporte</a>
+            <a href="commands.html" class="dHeader">Comandos</a>
+            <a href="extras.html" class="dHeader">Extras</a>
         </div>
     </header>
-    <div class="dev"><i class="fa-solid fa-screwdriver-wrench"></i>Em desenvolvimento!</div>
+
+    <main>
+        <section class="commandTitle">
+            <h1>Meus comandos</h1>
+            <h2>Obs: Para utilizá-los, você precisa sempre adicionar o meu prefixo "!", senão algo muito ruim pode
+                acontecer... ≽^•⩊•^≼</h2>
+        </section>
+        <section class="containerCommandMenu">
+            <article class="commandMenu">
+                <h1>!date</h1>
+                <p>Utilizado para informar a data e hora atual.</p>
+                <p class="observation">!date</p>
+            </article>
+            <article class="commandMenu">
+                <h1>!avatar</h1>
+                <p>Utilizado para mostrar sua foto/gif de perfil ou de outro usuario.</p>
+                <p class="observation">!avatar ou !avatar [@usuario]</p>
+            </article>
+            <article class="commandMenu">
+                <h1>!play</h1>
+                <p>Utilizado para tocar musicas de acordo com o nome da mesma ou utilizando um link direto do youtube.
+                </p>
+                <p class="observation">!play nomeDaMusica OU !play https://youtube.com/musica</p>
+            </article>
+            <article class="commandMenu">
+                <h1>!cat</h1>
+                <p>Utilizado para receber uma imagem aleatória de um gatinho muito fofinho. :3</p>
+                <p class="observation">!cat</p>
+            </article>
+            <article class="commandMenu">
+                <h1>!setStream</h1>
+                <p>Utilizado para receber notificações sempre que o streamer configurado entrar ao vivo.</p>
+                <p class="observation">!setStream</p>
+            </article>
+            <article class="commandMenu">
+                <h1>!revStream</h1>
+                <p>Utilizado para remover as notificações de determinado streamer já configurado.</p>
+                <p class="observation">!revStream</p>
+            </article>
+            <article class="commandMenu">
+                <h1>!setWM</h1>
+                <p>Utilizado para setar um canal de texto para mensagens de entrada de usuários. <br> Obs: Precisa da
+                    permissão de Gerenciar Servidores.</p>
+                <p class="observation">!setWM</p>
+            </article>
+            <article class="commandMenu">
+                <h1>!setGM</h1>
+                <p>Utilizado para setar um canal de texto para mensagens de saída de usuários. <br> Obs: Precisa da
+                    permissão de Gerenciar Servidores.</p>
+                <p class="observation">!setGM</p>
+            </article>
+            <article class="commandMenu">
+                <h1>!setChannel</h1>
+                <p>Utilizado para setar o canal que terá a configuração de cargo por reação.</p>
+                <p class="observation">!setChannel</p>
+            </article>
+            <article class="commandMenu">
+                <h1>!setMessage</h1>
+                <p>Utilizado para setar uma mensagem específica para receber o cargo por reação.</p>
+                <p class="observation">!setMessage [mensagemID]</p>
+            </article>
+            <article class="commandMenu">
+                <h1>!setReact</h1>
+                <p>Utilizado para definir cargos reagindo em mensagens.</p>
+                <p class="observation">!setReact</p>
+            </article>
+            <article class="commandMenu">
+                <h1>!revReact</h1>
+                <p>Utilizado para retirar o cargo por reação configurado em uma mensagem.</p>
+                <p class="observation">!revReact [mensagemID] [emojiEscolhido]</p>
+            </article>
+            <article class="commandMenu">
+                <h1>!autoRole</h1>
+                <p>Utilizado para adicionar um cargo especifico automaticamente aos usuários que ingressarem no
+                    servidor.</p>
+                <p class="observation">!autoRole</p>
+            </article>
+            <article class="commandMenu">
+                <h1>!revAutoRole</h1>
+                <p>Utilizado para remover as configurações do comando autoRole.</p>
+                <p class="observation">!revAutoRole</p>
+            </article>
+            <article class="commandMenu">
+                <h1>!sendEmbedWelc</h1>
+                <p>Utilizado para enviar o modelo do Embed de Boas-Vindas atualmente utilizado.</p>
+                <p class="observation">!sendEmbedWelc</p>
+            </article>
+            <article class="commandMenu">
+                <h1>!edTitleWelc</h1>
+                <p>Utilizado para personalizar o título do Embed de Boas-Vindas.</p>
+                <p class="observation">!edTitleWelc [MensagemTítulo]</p>
+            </article>
+            <article class="commandMenu">
+                <h1>!edColWelc</h1>
+                <p>Utilizado para personalizar a cor na lateral esquerda do Embed de Boas-Vindas.</p>
+                <p class="observation">!edColWelc [#fff]</p>
+            </article>
+            <article class="commandMenu">
+                <h1>!edImgWelc</h1>
+                <p>Utilizado para personalizar a imagem central do Embed de Boas-Vindas.</p>
+                <p class="observation">!edImgWelc [ImagemURL]</p>
+            </article>
+            <article class="commandMenu">
+                <h1>!edDescWelc</h1>
+                <p>Utilizado para personalizar a descrição do Embed de Boas-Vindas</p>
+                <p class="observation">!edDescWelc [MensagemDescricao]</p>
+            </article>
+            <article class="commandMenu">
+                <h1>!edFootWelc</h1>
+                <p>Utilizado para personalizar o rodapé do Embed de Boas-Vindas.</p>
+                <p class="observation">!edFootWelc [MensagemRodapé]</p>
+            </article>
+            <article class="commandMenu">
+                <h1>!sendEmbedBye</h1>
+                <p>Utilizado para enviar o modelo de Embed de Despedidas.</p>
+                <p class="observation">!sendEmbedBye</p>
+            </article>
+            <article class="commandMenu">
+                <h1>!edTitleBye</h1>
+                <p>Utilizado para personalizar o título do Embed de Despedidas.</p>
+                <p class="observation">!edTitleBye [MensagemTítulo]</p>
+            </article>
+            <article class="commandMenu">
+                <h1>!edColBye</h1>
+                <p>Utilizado para personalizar a cor lateral do Embed de Despedidas.</p>
+                <p class="observation">!edColBye [#fff]</p>
+            </article>
+            <article class="commandMenu">
+                <h1>!edImgBye</h1>
+                <p>Utilizado para personalizar a imagem central do Embed de Despedidas.</p>
+                <p class="observation">!edImgBye [ImagemURL]</p>
+            </article>
+            <article class="commandMenu">
+                <h1>!edDescBye</h1>
+                <p>Utilizado para personalizar a descriçao do Embed de Despedidas.</p>
+                <p class="observation">!edDescBye [MensagemDescricao]</p>
+            </article>
+            <article class="commandMenu">
+                <h1>!edFootBye</h1>
+                <p>Utilizado para personalizar o rodapé do Embed de Despedidas.</p>
+                <p class="observation">!edFootBye [MensagemRodapé]</p>
+            </article>
+            <article class="commandMenu">
+                <h1>!crush</h1>
+                <p>Utilizado para analisar a porcentagem de ambos usuários possuirem algo em comum.</p>
+                <p class="observation">!crush [@usuario1] [@usuario2]</p>
+            </article>
+            <article class="commandMenu">
+                <h1>!gif</h1>
+                <p>Utilizado para receber um gif aleatório.</p>
+                <p class="observation">!gif</p>
+            </article>
+            <article class="commandMenu">
+                <h1>!kiss</h1>
+                <p>Utilizado para enviar um beijo no usuário mencionado.</p>
+                <p class="observation">!kiss [@usuario]</p>
+            </article>
+            <article class="commandMenu">
+                <h1>!ping</h1>
+                <p>Utilizado para retornar a latência entre o servidor e o cliente (você).</p>
+                <p class="observation">!ping</p>
+            </article>
+        </section>
+    </main>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var numberOfKitties = 40;
-            var imageSrc = '../imgs/gato.png';
-    
+        document.addEventListener("DOMContentLoaded", function () {
+            var numberOfKitties = 40
+            var imageSrc = '../imgs/gato.png'
+
             for (var i = 0; i < numberOfKitties; i++) {
-                var kitty = document.createElement("img");
-                kitty.src = imageSrc;
-                kitty.style.left = Math.random() * 100 + "vw";
-                kitty.style.animationDuration = Math.random() * 5 + 5 + "s";
-                kitty.style.animationDelay = Math.random() * 4 + "s"; 
-                kitty.style.opacity = Math.random();
-                kitty.style.width = Math.random() * 20 + 10 + "px";
-                kitty.classList.add("kitty");
-                document.body.appendChild(kitty);
+                var kitty = document.createElement("img")
+                kitty.src = imageSrc
+                kitty.style.left = Math.random() * 100 + "vw"
+                kitty.style.animationDuration = Math.random() * 5 + 5 + "s"
+                kitty.style.animationDelay = Math.random() * 4 + "s";
+                kitty.style.opacity = Math.random()
+                kitty.style.width = Math.random() * 20 + 10 + "px"
+                kitty.classList.add("kitty")
+                document.body.appendChild(kitty)
             }
         })
     </script>
 </body>
+
 </html>
