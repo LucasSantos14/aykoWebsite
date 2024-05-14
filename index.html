@@ -47,12 +47,12 @@
     </main>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            var numberOfKitties = 40
-            var imageSrc = 'imgs/gato.png'
+            const numberOfKitties = 40
+            const imageSrc = 'imgs/gato.png'
 
-            for (var i = 0; i < numberOfKitties; i++) {
-                var kitty = document.createElement("img")
-                kitty.src = imageSrc;
+            for (let i = 0; i < numberOfKitties; i++) {
+                let kitty = document.createElement("img")
+                kitty.src = imageSrc
                 kitty.style.left = Math.random() * 100 + "vw"
                 kitty.style.animationDuration = Math.random() * 5 + 5 + "s"
                 kitty.style.animationDelay = Math.random() * 4 + "s"
